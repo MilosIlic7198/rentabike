@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Future E‑Bike Rentals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html,
+      body {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-950 text-white font-sans">
+    <!-- Hero -->
+    <section
+      class="bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 py-20 px-6 text-center shadow-xl"
+    >
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-5xl font-extrabold tracking-tight mb-4">
+          Rent A Bike Today!
+        </h1>
+        <p class="text-lg text-white/90 mb-8">
+          Premium electric bikes for urban explorers, commuters, and
+          adventurers.
+        </p>
+        <a
+          href="#contact"
+          class="bg-white text-gray-900 font-semibold py-3 px-6 rounded-full hover:bg-gray-200 transition"
+          >Contact Us</a
+        >
+      </div>
+    </section>
+
+    <!-- Bike Grid -->
+    <section id="bikes" class="max-w-7xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold text-center mb-12">Our E‑Bikes</h2>
+      <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Bike Card -->
+        <div
+          onclick="openModal('bike1')"
+          class="bg-gray-800 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:scale-[1.02] transition-transform"
+        >
+          <img
+            src="images/noimage.jpg"
+            alt="E-Bike Pro"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">E‑Bike Pro</h3>
+            <p class="text-gray-300 text-sm">
+              Sleek, fast, and designed for city commuting.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bike 2 -->
+        <div
+          onclick="openModal('bike2')"
+          class="bg-gray-800 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:scale-[1.02] transition-transform"
+        >
+          <img
+            src="images/noimage.jpg"
+            alt="E‑Cruiser"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">E‑Cruiser</h3>
+            <p class="text-gray-300 text-sm">
+              Smooth ride and comfortable upright seating.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bike 3 -->
+        <div
+          onclick="openModal('bike3')"
+          class="bg-gray-800 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:scale-[1.02] transition-transform"
+        >
+          <img
+            src="images/noimage.jpg"
+            alt="E‑Urban"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">E‑Urban</h3>
+            <p class="text-gray-300 text-sm">
+              Perfect for short trips and city exploration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="max-w-3xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold text-center mb-8">Get in Touch</h2>
+      <form>
+        <!-- action="mailto:your@email.com" method="POST" enctype="text/plain" -->
+        <div class="grid gap-6">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="w-full p-4 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="w-full p-4 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+            class="w-full p-4 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded font-semibold transition"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-10 text-center text-sm text-gray-400">
+      &copy; 2025 Future E‑Bike Rentals. All rights reserved.
+    </footer>
+
+    <!-- Modals -->
+    <div
+      id="bike1"
+      class="modal hidden fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50"
+    >
+      <div
+        class="bg-white text-gray-900 p-8 rounded-lg max-w-lg w-full relative"
+      >
+        <h2 class="text-2xl font-bold mb-4">E‑Bike Pro</h2>
+        <p class="mb-4 text-gray-700">
+          Top-tier performance with 80 km range, carbon frame, and smart
+          dashboard. Ideal for daily commuters and weekend warriors.
+        </p>
+        <button
+          onclick="closeModal('bike1')"
+          class="absolute top-3 right-4 text-3xl text-gray-400 hover:text-black"
+        >
+          &times;
+        </button>
+        <button
+          onclick="closeModal('bike1')"
+          class="mt-6 bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-700"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <div
+      id="bike2"
+      class="modal hidden fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50"
+    >
+      <div
+        class="bg-white text-gray-900 p-8 rounded-lg max-w-lg w-full relative"
+      >
+        <h2 class="text-2xl font-bold mb-4">E‑Cruiser</h2>
+        <p class="mb-4 text-gray-700">
+          Comfort-focused frame, wide tires, and a quiet motor make this cruiser
+          great for relaxed rides around town.
+        </p>
+        <button
+          onclick="closeModal('bike2')"
+          class="absolute top-3 right-4 text-3xl text-gray-400 hover:text-black"
+        >
+          &times;
+        </button>
+        <button
+          onclick="closeModal('bike2')"
+          class="mt-6 bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-700"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <div
+      id="bike3"
+      class="modal hidden fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50"
+    >
+      <div
+        class="bg-white text-gray-900 p-8 rounded-lg max-w-lg w-full relative"
+      >
+        <h2 class="text-2xl font-bold mb-4">E‑Urban</h2>
+        <p class="mb-4 text-gray-700">
+          Lightweight and agile, the E‑Urban is perfect for zipping through the
+          city with style and ease.
+        </p>
+        <button
+          onclick="closeModal('bike3')"
+          class="absolute top-3 right-4 text-3xl text-gray-400 hover:text-black"
+        >
+          &times;
+        </button>
+        <button
+          onclick="closeModal('bike3')"
+          class="mt-6 bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-700"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal Script -->
+    <script>
+      function openModal(id) {
+        document.getElementById(id).classList.remove("hidden");
+      }
+      function closeModal(id) {
+        document.getElementById(id).classList.add("hidden");
+      }
+      // Allow click outside modal to close
+      document.querySelectorAll(".modal").forEach((modal) => {
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) closeModal(modal.id);
+        });
+      });
+    </script>
+  </body>
+</html>
