@@ -35,57 +35,7 @@
       </div>
     </section>
 
-    <!-- Photo Gallery -->
-    <section id="gallery" class="max-w-7xl mx-auto px-6 py-16">
-      <h2 class="text-3xl font-bold text-center mb-12">Gallery</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <!-- Gallery Item -->
-        <a
-          href="images/hotel/hotel1.jpg"
-          data-fancybox="gallery"
-          data-caption="E-Bike Ride 1"
-          class="block overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/hotel/hotel1.jpg"
-            alt="E-Bike Ride 1"
-            class="w-full h-64 object-cover"
-          />
-        </a>
-
-        <!-- Gallery Item -->
-        <a
-          href="images/hotel/hotel3.jpg"
-          data-fancybox="gallery"
-          data-caption="E-Bike Ride 2"
-          class="block overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/hotel/hotel3.jpg"
-            alt="E-Bike Ride 2"
-            class="w-full h-64 object-cover"
-          />
-        </a>
-
-        <!-- Gallery Item -->
-        <a
-          href="images/hotel/hotel4.jpg"
-          data-fancybox="gallery"
-          data-caption="E-Bike Ride 2"
-          class="block overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/hotel/hotel4.jpg"
-            alt="E-Bike Ride 2"
-            class="w-full h-64 object-cover"
-          />
-        </a>
-
-        <!-- Add more items as needed -->
-      </div>
-    </section>
-
-    <!-- Services Grid -->
+    <!-- Services Section -->
     <section id="services" class="max-w-7xl mx-auto px-6 py-16">
       <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -145,8 +95,79 @@
       </div>
     </section>
 
+    <!-- Rent Pricing Section -->
+    <section id="pricing" class="max-w-7xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold text-center mb-12">E-Bike Rent Pricing</h2>
+      <div class="flex flex-col md:flex-row gap-8 items-center">
+        <!-- Pricing Table -->
+        <div class="w-full md:w-1/2">
+          <div class="space-y-6">
+            <!-- Daily Plan -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-2">Full Day Rental</h3>
+              <p class="text-gray-300 mb-4">
+                Great for day-long adventures and commutes.
+              </p>
+              <div class="text-2xl font-bold mb-2">$10 / day</div>
+            </div>
+            <!-- Weekly Plan -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-2">Weekly Rental</h3>
+              <p class="text-gray-300 mb-4">
+                Best value for extended use or travel.
+              </p>
+              <div class="text-2xl font-bold mb-2">$90 / week</div>
+            </div>
+            <!-- Month Plan -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-2">Month Rental</h3>
+              <p class="text-gray-300 mb-4">
+                Full month for city errands and tours.
+              </p>
+              <div class="text-2xl font-bold mb-2">$170 / month</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Thumbnail Preview -->
+        <div class="w-full md:w-1/2">
+          <!-- Clickable image that opens Fancybox gallery -->
+          <a
+            href="images/hotel/hotel1.jpg"
+            data-fancybox="gallery"
+            data-caption="Hotel Picture 1"
+            class="block overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="images/hotel/hotel1.jpg"
+              alt="Hotel Picture 1"
+              class="w-full h-80 object-cover rounded-lg"
+            />
+          </a>
+
+          <!-- Hidden images for gallery -->
+          <div class="hidden">
+            <a
+              href="images/hotel/hotel3.jpg"
+              data-fancybox="gallery"
+              data-caption="Hotel Picture 3"
+            >
+              <img src="images/hotel/hotel3.jpg" />
+            </a>
+            <a
+              href="images/hotel/hotel4.jpg"
+              data-fancybox="gallery"
+              data-caption="Hotel Picture 4"
+            >
+              <img src="images/hotel/hotel4.jpg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="max-w-7xl mx-auto px-6 py-20">
+    <section id="contact" class="max-w-7xl mx-auto px-6 py-16">
       <h2 class="text-3xl font-bold text-center mb-8">Get in Touch</h2>
       <div class="flex flex-col md:flex-row gap-8">
         <!-- Contact Form -->
@@ -216,7 +237,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 py-10 text-center text-sm text-gray-400">
+    <footer class="bg-gray-900 py-16 text-center text-sm text-gray-400">
       &copy; 2025 E‑Bike Rentals. All rights reserved.
     </footer>
 
